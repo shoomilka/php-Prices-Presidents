@@ -31,7 +31,7 @@ $maxPresidentsCount = 0;
 for($i = $firstPresidentBDay; $i <= $lastPresidentBDay; $i++){
 	$currentPresidentsCount = 0;
 	foreach($presidents as $president){
-		if(($president[2] <= $i) && (($president[4] >= $i)||($president[4] == '')))$currentPresidentsCount++;
+		if(($president[2] <= $i) && (($president[4] >= $i)||($president[4] == ''))) $currentPresidentsCount++;
 	}
 	if($currentPresidentsCount > $maxPresidentsCount){
 		$maxPresidentsCount = $currentPresidentsCount;
